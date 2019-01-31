@@ -1,0 +1,14 @@
+This is the initial IMSC 1.0.1 Text test content reel.
+
+IMSC1-0-1_TEXT_Test-Reel_FMS_v2-1_2018-01-23.xml
+IMSC1-0-1_TEXT_Test-Reel_FMS_v2-1_2018-01-23_Backplate.mov
+IMSC1-0-1_TEXT_Test-Reel_FMS_v2-1_2018-01-23_CompositedProxy.mov
+
+The intention is for the IMSC file to be rendered over the Backplate.
+If the IMSC decoding is accurate, it will look the same as the Composited Proxy file.
+
+The backplate includes the following:
+- Grid with lines every 5%
+- Yellow crosses at each corner of the region
+- Red arrows which show the X and Y text flow direction
+- Sync counter at the beginning and end of each event
