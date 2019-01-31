@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:timeBase="media" ttp:frameRate="24" ttp:frameRateMultiplier="1000 1001" xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt" xmlns:m608="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt#cea608" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:ittp="http://www.w3.org/ns/ttml/profile/imsc1#parameter" xmlns:ittm="http://www.w3.org/ns/ttml/profile/imsc1#metadata" ttp:profile="http://www.w3.org/ns/ttml/profile/imsc1/text" ittp:aspectRatio="16 9">
+    <head>
+        <metadata>
+            <ttm:desc>Fox Media Services - IMSC1 Test Reel v2.1 2018-01-23 | Created by Dave Kneeland and Brian Holter
+			Changelog:
+			v2.1	Fixed "Time Expression Test Event #3" begin time from 00:04:09:06 to 00:04:09:05 so that it pops on at frame number 5976 as intended 
+					Reduced length of Style and Region ID's, and added spaces when needed to line up XML attributes
+					Added ttp:profile="http://www.w3.org/ns/ttml/profile/imsc1/text"
+					Removed smpte:information element
+			v2.0	Added Italics in a span examples
+					Added off-white text with a textOutline example
+			v1.0	Initial release</ttm:desc>
+        </metadata>
+        <styling>
+            <style xml:id="prop_trans"     tts:color="white"   tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="prop_black"     tts:color="white"   tts:backgroundColor="black"       tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="mono_black"     tts:color="white"   tts:backgroundColor="black"       tts:fontFamily="monospaceSerif"        tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="mono_trans_clr" tts:color="#AA6C39" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="prop_trans_bdr" tts:color="#DCDCDC" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal" tts:textOutline="black 4%"/>
+            <style xml:id="prop_trans_050" tts:color="white"   tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="50%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="prop_trans_100" tts:color="white"   tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:fontWeight="normal" tts:fontStyle="normal"/>
+            <style xml:id="prop_trans_150" tts:color="white"   tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="150%" tts:fontWeight="normal" tts:fontStyle="normal"/>
+        </styling>
+        <layout>
+            <region xml:id="black_80" tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="center" tts:displayAlign="center"/>
+            <region xml:id="black_60" tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="20% 20%" tts:extent="60% 60%" tts:textAlign="center" tts:displayAlign="center"/>
+            <region xml:id="black_UL" tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="5% 5%"   tts:extent="45% 45%" tts:textAlign="center" tts:displayAlign="center"/>
+            <region xml:id="black_VR" tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="50% 50%" tts:extent="45% 45%" tts:textAlign="center" tts:displayAlign="center"/>
+            <region xml:id="trans_LA" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="left"   tts:displayAlign="after"/>
+            <region xml:id="trans_80" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="center" tts:displayAlign="center"/>
+            <region xml:id="trans_RB" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="right"  tts:displayAlign="before"/>
+            <region xml:id="color_80" tts:backgroundColor="#226666"     tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:textAlign="center" tts:displayAlign="center"/>
+        </layout>
+    </head>
+    <body>
+        <div>
+            <p begin="216f"         end="264f"         style="prop_trans"     region="black_80">Region Test Event #1<br/>10% in from each side</p>
+            <p begin="288f"         end="336f"         style="prop_trans"     region="black_60">Region Test Event #2<br/>20% in from each side</p>
+            <p begin="360f"         end="408f"         style="prop_trans"     region="black_UL">Region Test Event #3<br/>Upper left quadrant<br/>5% in on L and T sides</p>
+            <p begin="432f"         end="480f"         style="prop_trans"     region="black_VR">Region Test Event #4<br/>Lower right quadrant<br/>5% in on B and R sides</p>
+            <p begin="600f"         end="648f"         style="prop_trans"     region="trans_LA">Text Placement Test Event #1<br/>Bottom anchored flowing up, Left Justified<br/>Line 3</p>
+            <p begin="672f"         end="720f"         style="prop_trans"     region="trans_80">Text Placement Test Event #2<br/>Center anchored flowing out, Center Justified<br/>Line 3</p>
+            <p begin="744f"         end="792f"         style="prop_trans"     region="trans_RB">Text Placement Test Event #3<br/>Top anchored flowing down, Right Justified<br/>Line 3</p>
+            <p begin="816f"         end="864f"         style="prop_black"     region="trans_RB">Text Placement Test Event #4<br/>Top anchored flowing down, Right Justified<br/>Black text background<br/><span tts:fontStyle='italic'>Italic text in span</span></p>
+            <p begin="888f"         end="936f"         style="mono_black"     region="trans_RB">Text Placement Test Event #5<br/>Top anchored flowing down, Right Justified<br/>Black text background<br/>MonospaceSerif<br/><span tts:fontStyle='italic'>Italic text in a span</span></p>
+            <p begin="1056f"        end="1104f"        style="mono_trans_clr" region="color_80">Color Test Event #1<br/>Region = #226666<br/>Text = #AA6C39</p>
+            <p begin="1128f"        end="1176f"        style="prop_trans_bdr" region="trans_80">Color Test Event #2<br/>Region = Transparent<br/>Text = #DCDCDC<br/>textOutline = black 4%</p>
+            <p begin="1296f"        end="1344f"        style="prop_trans_050" region="trans_80">Font Size Test Event #1<br/>fontSize=50%</p>
+            <p begin="1368f"        end="1416f"        style="prop_trans_100" region="trans_80">Font Size Test Event #2<br/>fontSize=100%</p>
+            <p begin="1440f"        end="1488f"        style="prop_trans_150" region="trans_80">Font Size Test Event #3<br/>fontSize=150%</p>
+            <p begin="5832f"        end="5880f"        style="prop_trans"     region="trans_80">Time Expression Test Event #1<br/>Frames</p>
+            <p begin="00:04:06.246" end="00:04:08.248" style="prop_trans"     region="trans_80">Time Expression Test Event #2<br/>HH:MM:SS.ms</p>
+            <p begin="00:04:09:05"  end="00:04:11:06"  style="prop_trans"     region="trans_80">Time Expression Test Event #3<br/>HH:MM:SS:FF</p>
+        </div>
+    </body>
+</tt>
