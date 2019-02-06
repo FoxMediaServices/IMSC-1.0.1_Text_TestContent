@@ -13,6 +13,7 @@ This test content includes the following assets:
 The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IMSC decoding is accurate, it will look approximately the same as the Composited Proxy file. It is acceptable for there to be slight differences in text rendering, since the proportionalSansSerif font chosen by the renderer may be different than what was used for the proxy.
 
 The backplate includes the following:
+- Frame counter and Media Time counter
 - Grid with lines every 5%
 - Yellow crosses at each corner of the region
 - Red arrows which show the X and Y text flow direction
